@@ -2,7 +2,7 @@ let links = document.querySelectorAll('.links ul li');
 
 function initialSetting(){
 
-    // highlighting OPENT ACCOUNT
+    // highlighting "open account"
     links[ links.length - 1 ].classList.add('active');
 }
 
