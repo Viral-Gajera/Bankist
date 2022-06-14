@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: rgb(94 197 118);
+    --color-secondary: rgb(255 203 3);
+    --color-tertiary: rgb(255 88 95);
+
+    --color-primary-darker: rgb(75 187 125);
+    --color-secondary-darker: rgb(255 187 0);
+    --color-tertiary-darker: rgb(253 66 75);
+    
+    --color-primary-opacity: rgb(94 197 118 / 23%);
+    --color-secondary-opacity: rgb(255 205 3 / 19%);
+    --color-tertiary-opacity: rgb(255 88 96 / 18%);
+    
+    --gradient-primary: linear-gradient(to top left, rgb(57 179 133), rgb(155 225 93));
+    
+    --gradient-secondary: linear-gradient(to top left, rgb(255 176 3), rgb(255 203 3));
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    height: auto;
+    border-radius: 2.5px;
+    background-color: gray;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body{
+    font-size: 20px;
+
+    width: 100vw;
+    min-height: 200vh;
+
+    overflow-x: hidden;
+
+    background-color: whitesmoke;
+}
+
+/* STYLING NAVIGATION BAR */
+.nav-bar{
+
+    width: 100%;
+    height: 80px;
+
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    height: 50px;
+
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+
+.links ul{
+
+    width: fit-content;
+    height: 50px;
+
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links ul li{
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 0.9em;
+
+    margin: 0px 5px;
+    padding: 5px 15px;
+
+    border-radius: 30px;
+    
+}
+
+/* CLASSES FOR SCRIPT */
+.active{
+    background-color: var(--color-primary);
+}
